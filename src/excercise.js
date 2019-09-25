@@ -4,6 +4,7 @@ const chalk = require('chalk');
 
 const address = process.argv[2];
 
+
 geocode(address, (error, { latitude, longitude, location }) => {
   if (error) {
     return console.log('Error message: ', error);
